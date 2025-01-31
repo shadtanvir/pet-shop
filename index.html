@@ -46,9 +46,9 @@
     </script>
   </head>
   <body>
-    <header class="bg-primarybg h-24 border-b-2 border-slate-500 lg:border-0">
+    <header class="bg-primarybg h-24 border-b-2 border-slate-500 lg:border-0 relative z-20">
       <div
-        class="container mx-auto px-5 h-24 flex items-center justify-between"
+        class="container mx-auto px-4 h-24 flex items-center justify-between"
       >
         <div class="flex items-center gap-3">
           <img src="c1-assets/logo-header.png" alt="" />
@@ -57,7 +57,7 @@
           </h2>
         </div>
         <div>
-          <ul class="hidden lg:flex gap-8 text-xl">
+          <ul class="hidden lg:flex gap-10 text-xl">
             <li class="list-none"><a href="">Find a pet</a></li>
             <li class="list-none"><a href="">Breeds</a></li>
             <li class="list-none"><a href="">Contact us</a></li>
@@ -74,5 +74,21 @@
         <div class="lg:hidden"><i class="fa-solid fa-bars"></i></div>
       </div>
     </header>
+    <!-- banner -->
+    <div class="my-20 container mx-auto px-4 relative">
+      <div class="w-full  lg:w-1/2 flex flex-col gap-9 relative z-10 ">
+        <h1 class="text-5xl font-bold">
+          Pamper Your Pet,<br />
+          Because They Deserve <br />
+          the Best
+        </h1>
+        <p class="text-xl font-light">
+          Discover a world of treats, toys, and essentials handpicked for your
+          furry friends. Shop now and make tails wag with joy!
+        </p>
+        <button class="btn btn-warning text-center w-28 text-x font-medium">Find a pet</button>
+      </div>
+      <img class="w-full relative -top-27 lg:-top-100" src="c1-assets/cat-big.png" alt="">
+    <div>
   </body>
 </html>
