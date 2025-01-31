@@ -46,59 +46,32 @@
     </script>
   </head>
   <body>
-    <header>
-      <!-- Navbar -->
-      <nav>
-        <div class="h-24 bg-primarybg relative z-20">
-          <div class="container mx-auto h-24 flex justify-between items-center">
-            <div class="ml-4 lg:flex items-center gap-3 text-xl">
-              <img src="c1-assets/logo-header.png" alt="" />
-              <h2 class="hidden lg:flex font-medium">
-                Browse<span class="text-btnbgy">4</span>Pets
-              </h2>
-            </div>
-            <div class="hidden lg:flex items-center">
-              <ul class="flex gap-8 font-semibold">
-                <li><a href="">Find a pet</a></li>
-                <li><a href="">Breeds</a></li>
-                <li><a href="">Contact us</a></li>
-              </ul>
-            </div>
-            <div class="hidden lg:flex items-center gap-3">
-              <i class="fa-regular fa-bell"></i>
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <button class="btn bg-transparent border-btnbgy w-32 h-8">
-                Login
-              </button>
-              <button class="btn btn-warning h-8 w-32">Register</button>
-            </div>
-            <div class="mr-4 lg:hidden">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-          </div>
+    <header class="bg-primarybg h-24 border-b-2 border-slate-500 lg:border-0">
+      <div
+        class="container mx-auto px-5 h-24 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <img src="c1-assets/logo-header.png" alt="" />
+          <h2 class="hidden lg:flex text-2xl font-medium">
+            Browse<span class="text-btnbgy">4</span>Pets
+          </h2>
         </div>
-      </nav>
-      <hr class="border-1 border-black lg:hidden" />
-      <!-- Banner -->
-      <div class="mr-4 ml-4 lg:container mx-auto font-sora my-14 relative">
-        <div class="w-full lg:w-1/2 space-y-5 z-10 absolute">
-          <h1 class="font-adlam text-5xl">
-            Pamper Your Pet, <br />
-            Because They Deserve <br />the Best
-          </h1>
-          <p class="text-xl text-black-100">
-            Discover a world of treats, toys, and essentials handpicked for your
-            furry friends. Shop now and make tails wag with joy!
-          </p>
-          <button class="btn btn-warning h-8 w-32 text-black-100">
-            Find a pet
+        <div>
+          <ul class="hidden lg:flex gap-8 text-xl">
+            <li class="list-none"><a href="">Find a pet</a></li>
+            <li class="list-none"><a href="">Breeds</a></li>
+            <li class="list-none"><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:flex items-center gap-3">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="btn btn-warning text-center bg-transparent w-32">
+            Login
           </button>
+          <button class="btn btn-warning text-center w-32">Register</button>
         </div>
-        <img
-          class="w-full absolute z-1 top-83 lg:-top-23"
-          src="c1-assets/cat-big.png"
-          alt=""
-        />
+        <div class="lg:hidden"><i class="fa-solid fa-bars"></i></div>
       </div>
     </header>
   </body>
