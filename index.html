@@ -27,6 +27,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
     <!-- Tailwind customize -->
     <script>
       tailwind.config = {
@@ -352,7 +353,8 @@
     <!-- low price -->
     <section class="relative -top-20 container mx-auto px-4 font-adlam">
       <h2 class="text-4xl">Everyday low Price</h2>
-      <div class="mt-20 grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-3">
+      <div class="mt-20 grid grid-cols-1 gap-4 lg:grid-cols-3">
+        <!-- left dog -->
         <div
           style="
             background: linear-gradient(
@@ -361,22 +363,21 @@
               rgb(172, 210, 253) 100%
             );
           "
-          class="lg:col-span-2 rounded-xl bg-red-600 lg:flex"
+          class="relative lg:col-span-2 lg:flex justify-around lg:gap-10 rounded-xl"
         >
-          <div
-            class="flex flex-col justify-center my-5 lg:my-0 mx-5 lg:px-25 lg:pr-0 lg:gap-4"
-          >
-            <h3 class="font-sora hidden lg:text-xl lg:flex">Under Price</h3>
-            <h1 class="text-3xl lg:text-5xl">Pet Grooming Mitt</h1>
-            <p class="text-white text-xl hidden lg:flex">(Easy Hair Removal)</p>
-            <h2 class="text-4xl lg:text-6xl text-white lg:pt-8 lg:text-black">
-              $7.99
-            </h2>
+          <div class="lg:mx-35 m-6 flex flex-col justify-center gap-4">
+            <p class="font-sora hidden text-xl lg:flex">Under Price</p>
+            <h2 class="lg:text-4xl text-3xl">Pet Grooming Mitt</h2>
+            <p class="hidden text-xl text-white lg:flex">(Easy Hair Removal)</p>
+            <h1 class="text-white text-3xl lg:text-7xl lg:text-black">$7.99</h1>
           </div>
-          <div class="relative -top-25 left-15 lg:-top-0 lg:left-0">
-            <img src="c1-assets/cute-dog-mid.png" alt="" />
-          </div>
+          <img
+            class="relative -top-24 left-25 lg:-top-0 lg:left-0 w-3/4 lg:w-auto"
+            src="c1-assets/cute-dog-mid.png"
+            alt=""
+          />
         </div>
+        <!-- right cat -->
         <div
           style="
             background: linear-gradient(
@@ -385,17 +386,19 @@
               rgb(249, 223, 138) 100%
             );
           "
-          class="rounded-xl px-10 bg-linear-to-r from-cyan-500 to-blue-500 p-5"
+          class="p-10 rounded-xl"
         >
-          <h2 class="text-3xl mb-3">T-Shirt for Dogs</h2>
-          <h2 class="text-btnbgy text-5xl">$7.99</h2>
+          <h2 class="text-2xl mb-5">T-Shirt for Dogs</h2>
+          <h1 class="text-yellow-400 text-5xl">$7.99</h1>
           <img
-            class="relative left-13 -top-15 lg:-top-12"
+            class="relative -top-15 left-20 lg:-top-15 lg:left-25 w-3/4 lg:w-auto"
             src="c1-assets/cute-pet-mid.png"
             alt=""
           />
         </div>
       </div>
     </section>
+
+    <!-- footer -->
   </body>
 </html>
