@@ -37,6 +37,7 @@
               primarybg: "#FFF9F4",
               btnbgy: "#FFDC26",
               cardbg: "#F9DF8A",
+              footerbg: "#FFDC2680",
             },
             fontFamily: {
               adlam: ["ADLaM Display", "serif"],
@@ -70,16 +71,20 @@
         <div class="hidden lg:flex items-center gap-3">
           <i class="fa-regular fa-bell"></i>
           <i class="fa-solid fa-magnifying-glass"></i>
-          <button class="btn btn-warning text-center bg-transparent w-32">
+          <button
+            class="btn btn-warning text-center bg-transparent border-1 w-32 border-btnbgy-50"
+          >
             Login
           </button>
-          <button class="btn btn-warning text-center w-32">Register</button>
+          <button class="btn btn-warning bg-btnbgy text-center border-0 w-32">
+            Register
+          </button>
         </div>
         <div class="lg:hidden"><i class="fa-solid fa-bars fa-2x"></i></div>
       </div>
     </header>
     <!-- banner -->
-    <div class="mt-14 container mx-auto px-4 relative">
+    <div class="mt-25 container mx-auto px-4 relative">
       <div class="w-full lg:w-1/2 flex flex-col gap-9 relative z-10">
         <h1 class="text-5xl font-bold">
           Pamper Your Pet,<br />
@@ -90,7 +95,9 @@
           Discover a world of treats, toys, and essentials handpicked for your
           furry friends. Shop now and make tails wag with joy!
         </p>
-        <button class="btn btn-warning text-center w-32 text-xl font-medium">
+        <button
+          class="btn btn-warning text-center w-36 bg-btnbgy text-xl font-medium border-0"
+        >
           Find a pet
         </button>
       </div>
@@ -102,11 +109,9 @@
     </div>
 
     <!-- Categories -->
-    <section
-      class="relative -top-13 font-adlam container mx-auto px-4 lg:-top-70"
-    >
+    <section class="relative font-adlam container mx-auto px-4 lg:-top-60">
       <h2 class="text-4xl">Browse By Categories</h2>
-      <div class="mt-12 grid grid-cols-2 lg:grid-cols-6 grid-rows-1 gap-4">
+      <div class="mt-17 grid grid-cols-2 lg:grid-cols-6 grid-rows-1 gap-4">
         <div class="p-6 flex flex-col items-center gap-6 bg-cardbg rounded-2xl">
           <div class="bg-white w-20 rounded-full p-5">
             <img src="c1-assets/dog-cartoon.png" alt="" />
@@ -154,7 +159,7 @@
 
     <!-- Trending products -->
     <section
-      class="px-auto lg:w-full -top-25 relative lg:-top-45 lg:bg-primarybg py-30"
+      class="px-auto lg:w-full relative -top-0 top-10 lg:-top-20 lg:bg-primarybg py-30"
     >
       <div class="relative font-sora container mx-auto px-4">
         <h2 class="text-4xl font-adlam">Trending Pet Products items-center</h2>
@@ -351,7 +356,9 @@
     </section>
 
     <!-- low price -->
-    <section class="relative -top-20 container mx-auto px-4 font-adlam">
+    <section
+      class="relative top-40 lg:top-20 container mx-auto px-4 font-adlam"
+    >
       <h2 class="text-4xl">Everyday low Price</h2>
       <div class="mt-20 grid grid-cols-1 gap-4 lg:grid-cols-3">
         <!-- left dog -->
@@ -399,6 +406,68 @@
       </div>
     </section>
 
-    <!-- footer -->
+    <div>
+      <!-- upper part -->
+      <section class="relative top-90 lg:top-55 container mx-auto px-4">
+        <div
+          class="px-4 py-10 lg:px-20 bg-primarybg font-sora relative lg:flex gap-30 rounded-2xl"
+        >
+          <img src="c1-assets/cute-pet-mid.png" alt="" />
+          <div
+            class="mt-10 lg:mt-0 flex flex-col justify-center items-center lg:items-start gap-5"
+          >
+            <h2 class="font-adlam text-3xl lg:text-4xl">Get Pawsome News!</h2>
+            <p class="text-2xl text-center">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <input
+              class="w-full lg:w-5/6 h-16 rounded-lg bg-white px-5 text-xl"
+              placeholder="Enter email....                      "
+              type="text"
+            />
+            <button class="btn btn-warning w-30 bg-btnbgy border-0">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="bg-footerbg font-sora">
+        <div
+          class="pt-120 lg:pt-88 pb-35 container mx-auto px-4 flex flex-col gap-10 lg:flex-row justify-between"
+        >
+          <div class="flex flex-col gap-4 lg:gap-8">
+            <div class="flex items-center gap-4">
+              <img src="c1-assets/logo-footer.png" alt="" />
+              <h3 class="text-2xl font-medium">
+                Browse<span class="text-btnbgy">4</span>Pets
+              </h3>
+            </div>
+            <p class="text-xl">
+              Discover a world of treats, toys, and <br />
+              essentials handpicked for your furry <br />
+              friends
+            </p>
+          </div>
+          <div>
+            <ul class="flex flex-col gap-10 text-xl font-semibold">
+              <li class="list-none"><a href="">Find a pet</a></li>
+              <li class="list-none"><a href="">Breeds</a></li>
+              <li class="list-none"><a href="">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col justify-end gap-5">
+            <p class="text-lg">Follow Us</p>
+            <div class="flex gap-7">
+              <img src="c1-assets/fb-logo.png" alt="" />
+              <img src="c1-assets/insta-logo.png" alt="" />
+              <img src="c1-assets/linkedin-logo.png" alt="" />
+              <img src="c1-assets/yt-logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
